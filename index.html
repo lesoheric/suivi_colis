@@ -154,10 +154,11 @@
 
       <section class="envoi">
         <h2>Envoi de Colis</h2>
-        <table class="table table-dark table-striped">
+        <table class="table table-dark  table-striped   " >
           <thead>
             <tr>
               <th scope="col">Type du produit</th>
+              <th scope="col">Nom du produit</th>
               <th scope="col">Masse(kg)</th>
               <th scope="col">Délai de livraison</th>
               <th scope="col">Prix(euros)</th>
@@ -165,47 +166,56 @@
           </thead>
           <tbody>
             <tr>
-              <th scope="row">Ordinateurs portables</th>
-              <td>per</td>
-              <td>7 jours</td>
+              <tr>
+                <th  rowspan="4"   scope="row">Appareils éléctroniques</th>
+              </tr>
+  
+              <th scope="row "  >Ordinateurs portables</th>
+              <td>-2kg</td>
+              <td rowspan="7">7 jours</td>
               <td>70</td>
             </tr>
             <tr>
               <th scope="row">Tablettes</th>
-              <td colspan="2">per</td>
+              <td colspan="2">-0.7kg</td>
               
               <td>50</td>
             </tr>
             <tr>
               <th scope="row">Téléphones portables</th>
-              <td colspan="2">per</td>
+              <td colspan="2">-0.2kg</td>
               
               <td>40</td>
             </tr>
+            <tr>
+              <th  rowspan="4"   scope="row">Fournitures</th>
+            </tr>
   
             <tr>
-              <th scope="row">Fournitures Alimentaires</th>
+              <th  scope="row"> Alimentaires</th>
               <td colspan="2">1kg</td>
               <td>15</td>
             </tr>
   
   
             <tr>
-              <th scope="row">Fournitures Vestimentaires</th>
+              <th scope="row"> Vestimentaires</th>
               <td colspan="2">1kg</td>
               <td>25</td>
             </tr>
   
             
             <tr>
-              <th scope="row">Fournitures Scolaires</th>
+              <th scope="row"> Scolaires</th>
               <td colspan="2">1kg</td>
               <td>30</td>
             </tr>
   
             <tr>
-              <th scope="row">Autres</th>
-              <td colspan="2">-</td>
+              <th rowspan="4" scope="row">Autres</th>
+              <td colspan="1">-</td>
+              <td>-</td>
+              <td>-</td>
               <td>-</td>
             </tr>
           </tbody>
@@ -283,7 +293,7 @@ publishable-key="pk_live_51PD09hHWesTGdUBeypdT45kLmLHxc0VAH6eyUA2zCQnxLk3Ime3zvR
         <p>un achat d'un appareil éléctronique avec l'entreprise LESOHERIC vous revient moins et les frais de livraisons sont gratuits, vous trouverez ci-dessous quelques liens utiles. </p>
         <h4>liens utiles : </h4>
         <ul>
-          <li><a href="https://www.lesoheric.fr/">LESOHERIC-Market(lesoheric.fr)</a> : Site E-commerce, application disponible sur PLAYSTORE et l'APPSTORE. </li>
+          <li><a href="https://www.lesoheric.fr/">LESOHERIC-MARKET(lesoheric.fr)</a> : Site E-commerce, application disponible sur PLAYSTORE et l'APPSTORE. </li>
         </ul>
     </section>
 
@@ -363,7 +373,17 @@ publishable-key="pk_live_51PD09hHWesTGdUBeypdT45kLmLHxc0VAH6eyUA2zCQnxLk3Ime3zvR
       a{
         color : rgb(110, 26, 26);
       }
-       
+      
+      h1,h2,h3,h4,h5,td,th{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      td,th{
+        font-size: 13px;
+      }
+      address strong{
+        font-size: 13px;
+      }
+      
 
 
 </style>
