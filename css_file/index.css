@@ -15,7 +15,6 @@
      .nav-item{  
         width: fit-content;
         min-width: 120px;
-       background-color: rgb(58, 61, 63);
         text-align: center;
         margin-right: 10px;
         margin-left: 10px;
@@ -91,6 +90,15 @@
 
   
       @media (max-width: 800px) {
+        .navbar-nav{
+          margin: auto;
+          font-size : 8px;
+        }
+        .nav-item{  
+          width: fit-content;
+          text-align: center;
+  
+        }
         th, td {
           padding: 2px;
           font-size: 0.5em; /* Réduit encore plus la taille de la police */
