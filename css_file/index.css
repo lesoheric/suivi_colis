@@ -8,8 +8,13 @@
       a{
         color : rgb(110, 26, 26);
       }
-     .nav-item{
-        margin-right: 5px;;
+     .nav-item{  
+        width: fit-content;
+        min-width: 120px;
+       background-color: rgb(58, 61, 63);
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 10px;
       }
      .transporteur{
         border : none;
