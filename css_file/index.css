@@ -8,6 +8,10 @@
       a{
         color : rgb(110, 26, 26);
       }
+      .navbar-nav{
+        margin: auto;
+        font-size : 10px;
+      }
      .nav-item{  
         width: fit-content;
         min-width: 120px;
@@ -15,6 +19,7 @@
         text-align: center;
         margin-right: 10px;
         margin-left: 10px;
+
       }
      .transporteur{
         border : none;
