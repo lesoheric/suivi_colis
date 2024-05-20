@@ -1,0 +1,93 @@
+     #page{
+        max-width:1600px;
+         margin: auto;
+     }
+     h1,h2,h3,h4,h5,td,th{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      a{
+        color : rgb(110, 26, 26);
+      }
+     .nav-item{
+        margin-right: 5px;;
+      }
+     .transporteur{
+        border : none;
+        align-items : center;
+     }
+     .services{
+        text-align: center;
+      }
+     .services .card{
+        max-width: 550px;
+         border : none;
+         box-shadow: 2px 2px 4px rgba(19, 18, 18, 0.199);   
+     }
+     .services img{
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+
+      }
+      .services div{
+        display: inline-block;
+        margin-top: 20px;
+        
+      }
+      #tarification{
+        margin-top: 10px;
+      }
+      td,th,label{
+        font-size: 13px;
+      }
+      .card{
+        margin-left : 10px;
+        margin-right : 10px;
+      }
+      .card img{
+        height: 200px;
+        width: 200px;
+      }
+     footer ul{
+        text-align : center;
+        font-size : 10px;
+       
+     }
+     footer ul li{
+        min-width: 180px;
+     }
+     footer .card{
+        margin : 0px; 
+        border-radius : 0px;
+        border : 1px solid rgba(0, 0, 0, 0);
+     }
+    address{
+        display: inline-block;
+        text-align: left;
+        margin-left: 100px;
+        margin-right: 100px; 
+      }
+      #adresses{
+        margin: auto;
+        text-align: center;
+      }
+      p,.liens_utiles{
+        font-size: 13px;
+      }
+     
+      address strong{
+        font-size: 13px;
+      }
+
+  
+      @media (max-width: 800px) {
+        th, td {
+          padding: 2px;
+          font-size: 0.5em; /* Réduit encore plus la taille de la police */
+        }
+        table {
+          font-size: 0.9em; /* Réduit la taille de la police de la table */
+        }
+       
+       
+      }
