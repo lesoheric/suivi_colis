@@ -5,12 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css_file/index.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" defer></script>
         <title>Monitoring de livraison</title>
 
     </head>
     <body>
-    <div id="page" style="max-width:1600px; margin: auto;">
+    <div id="page">
         <figure class="text-center">
             <blockquote class="blockquote">
               <p>BIENVENUE dans notre zone TRACKING</p>
@@ -22,18 +23,18 @@
     
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
         <div class="container-fluid " style="align-items: center;">
-        <a class="navbar-brand" href="#"> 
+        <a class="navbar-brand" href="index.html"> 
             LESOHERIC-TRANSPORT
           </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" arialabel="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent"  >
-         <ul class="navbar-nav  nav nav-pills me-auto " style="margin: auto;font-size : 11px;">
-             <li class="nav-item" style="min-width: 180px;"><a class="nav-link"style="text-align:center"href="index.html">ACCUEIL</a></li>
-             <li class="nav-item" style="min-width: 180px;"><a class="nav-link "style="text-align:center"href="#service">SERVICES</a></li>
-             <li class="nav-item" style="min-width: 180px;"><a class="nav-link "style="text-align:center"href="#tarification">TARIFS</a></li>
-             <li class="nav-item" style="min-width: 180px;"><a class="nav-link "style="text-align:center"href="https://www.lesoheric.fr/">BOUTIQUE</a></li>
+         <ul class="navbar-nav  nav nav-pills me-auto " >
+             <li class="nav-item" ><a class="nav-link" href="index.html">ACCUEIL</a></li>
+             <li class="nav-item" ><a class="nav-link " href="#service">SERVICES</a></li>
+             <li class="nav-item" ><a class="nav-link " href="#tarification">TARIFS</a></li>
+             <li class="nav-item" ><a class="nav-link " href="https://www.lesoheric.fr/">BOUTIQUE</a></li>
          </ul>
             </div>
 
@@ -41,24 +42,30 @@
      </nav>
      <section class="container-fluid  ">
          <section class="row ">
-        <article class="col border text-center"><img src="images/suivi_colis.jpg" class="img-fluid" alt="suivie_colis"></article>
-        <aside class="col-sm-9 border" style="text-align: center;"> 
+        <article  class="col  text-center"><img src="images/location.png" class="img-fluid" alt="suivie_colis" ></article>
+        <aside class="col-sm-9 " style="text-align: center;"> 
             <h1>TRACKING: Suivre son colis</h1>
             <p style="font-size: 14px;">Sur notre site, suivez vos colis expédiés par DHL, UPS, Mondial Relay en toute simplicité.
                 cliquez sur le lien de l'entreprise qui gère votre colis et Entrez le numéro de suivi et obtenez instantanément toutes les informations sur l'état et la localisation de votre livraison.
-                  Ne perdez plus de temps à attendre, restez informé à chaque étape de l'acheminement de vos colis avec notre service de suivi 
-                  efficace et convivial.
             </p>
-            
+            <p class="search_colis">
+              <form id="tracking-form">
+                <label  for="tracking-number" >Entrez votre Numéro de suivi😎</label><br/>
+                <input  class="form-control" type="text" id="tracking-number" name="tracking-number" style="width: 80%;border-radius : 4px;margin : auto;padding-bottom : 0px;" required>
+                <button type="submit" style="margin-top: 4px;" class="btn btn-dark">Rechercher</button>
+                <p>
+                  <span>e.g : 1234ABCD5678EFGH </span><br/>
+                <span><strong>Avis Important</strong> : La barre de recherche n'est pas encore opérationnelle. Pour suivre vos colis, nous vous invitons à utiliser les liens des transporteurs (UPS, DHL, Mondial Relay)
+                   disponibles sur notre site. Merci de votre compréhension. </span>
+               </p>          
+            </form>    
+            </p>
             </aside>
         </section>
-        
-
-
-         <div class="card-group " style="font-size: 14px;margin-top : 50px;margin-bottom : 50px; padding : 0px;">
+         <div class="card-group " style="font-size: 14px;margin-top : 10px;margin-bottom : 10px;">
 
          
-            <div class="card" >
+            <div class="card transporteur" >
                 <img src="images/mondial_relay.jpg" class="card-img-top" style="padding : 50px;" alt="logo_mondial_relay">
                 <div class="card-body">
                   <h5 class="card-title">MONDIAL RELAY</h5>
@@ -68,7 +75,7 @@
                 </div>
               </div>
 
-             <div class="card" >
+             <div class="card transporteur" >
             <img src="images/dhl_logo.jpg"class="card-img-top" style="padding : 50px;"alt="dhl_logo">
             <div class="card-body">
               <h5 class="card-title ">DHL</h5>
@@ -77,7 +84,7 @@
               <a href="https://www.dhl.com/fr-fr/home/suivi.html" tabindex="-1" class="btn btn-primary  p">Dalsey, Hillblom, Lynn</a>
             </div>
           </div>
-            <div class="card">
+            <div class="card transporteur">
                 <img src="images/ups_logo.jpg" class="card-img-top" style="padding : 50px;" alt="ups_logo" >
                 <div class="card-body">
                   <h5 class="card-title">UPS</h5>
@@ -91,23 +98,22 @@
 
          </section>
 
-         <div id="service">
+         <div id="service" >
          <h1>Nos services Plus++</h1>
-          <div class="card">
+          <div class="card" style="border: none;">
             <div class="card-body">
               <h5 class="card-title">LESOHERIC-Transport</h5>
               <p class="card-text">Lesoheric Transport relie efficacement l'Afrique et l'Europe.
                 Nous garantissons des services de transport fiables et sécurisés, soutenus par un suivi en temps réel et des partenariats stratégiques.
                  Choisissez Lesoheric pour une logistique internationale sans soucis et une tranquillité d'esprit totale.</p>
-        
             </div>
-            <img src="images/lesoheric-transport_logo.jpg" class="card-img-bottom" alt="logo de lesoheric transport">
+           
           </div>
 
 
        
-          <section class="services">
-         <div class="card mb-3" style="max-width: 550px;">
+          <section class="services" >
+         <div class="card "  >
           <div class="row g-0">
             <div class="col-md-4" style="height: 100px;">
               <img src="images/envoi_colis.jpg" class="img-fluid rounded-start" alt="envoi de colis">
@@ -124,7 +130,7 @@
           </div>
         </div>
         
-        <div class="card mb-3" style="max-width: 550px;">
+        <div class="card ">
           <div class="row g-0">
             <div class="col-md-4"style="height: 100px;">
               <img src="images/envoi_argent.jpg" class="img-fluid rounded-start" alt="envoi d'argent">
@@ -148,7 +154,7 @@
 
 
     <div id="tarification">
-      <h1>Nos tarifs-BURUNDI</h1>
+      <h1>Nos Tarifs-BURUNDI</h1>
      
 
 
@@ -225,9 +231,7 @@
           LESOHERIC-Transport assure des liaisons rapides et sécurisées entre l'Afrique, y compris le Burundi, 
           et l'Europe. Pour chaque envoi de colis, un numéro de suivi vous sera fourni afin de suivre votre colis en temps réel. 
           Si vous ne trouvez pas le type de produit souhaité, 
-          veuillez remplir notre formulaire de contact ou écrire à admin.entreprise@lesoheric.fr.
-         
-         
+          veuillez remplir notre formulaire de contact ou écrire à admin.entreprise@lesoheric.fr.  
         </p>
         <div id="adresses">
         <address><h3>Envoi</h3>
@@ -243,7 +247,6 @@
 
             </address>
           </div>
-
         <h3>Echantillons-Paiements</h3>
         <p>Découvrez notre système de paiement sécurisé via des liens envoyés directement dans votre boîte mail dès la
            confirmation de votre commande. Même si vous ne pouvez pas vous rendre à notre agence, nous proposons des envois à vos frais.
@@ -251,21 +254,20 @@
            Chez LESOHERIC-Transport, nous simplifions votre expérience d'envoi, pour votre plus grand confort.</p>
 
         <div id="echantillon">
+         
           <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 <stripe-pricing-table pricing-table-id="prctbl_1PH45xHWesTGdUBe8aGKxQRQ"
 publishable-key="pk_live_51PD09hHWesTGdUBeypdT45kLmLHxc0VAH6eyUA2zCQnxLk3Ime3zvR66lXsUkkyg39TLDahpLyzlICMDEBNB3vRj00fLZmuL9C">
-</stripe-pricing-table>
-          
+</stripe-pricing-table>        
         </div>
         <p class="mode_de_paiement">
           les modes de paiements acceptés sont  : <strong>carte bancaire(carte de débit,crédit,express,etc),Paypal,paiements en plusieurs fois,bancontact(Belgique),Virements bancaires,etc.</strong>
-        </p>
-
+       </p>
       </section>
       <section class="cash">
         <h2>Envoi d'argent</h2>
         <h3>Tiers monde - Afrique</h3>
-        <p><strong>Chez LESOHERIC-Transport</strong>, nous facilitons les envois de fonds depuis divers pays vers l'Afrique, notamment le Burundi. 
+        <p><strong>Chez LESOHERIC-Transport</strong>, nous facilitons les envois de fonds depuis divers pays vers l'Afrique. 
           Pour assurer un traitement rapide et sécurisé de votre transaction, nous demandons un descriptif complet du destinataire. 
           Le bénéficiaire peut se rendre en agence pour récupérer les fonds ou, sur demande, recevoir l'argent directement sur son compte mobile ou bancaire. Les frais applicables sont à la charge du client, avec un taux de 4% déduit du montant envoyé. 
           Faites confiance à LESOHERIC-Transport pour des transferts d'argent rapides, sûrs et pratiques.
@@ -281,7 +283,6 @@ publishable-key="pk_live_51PD09hHWesTGdUBeypdT45kLmLHxc0VAH6eyUA2zCQnxLk3Ime3zvR
             Pour toute question, veuillez nous contacter à serviceclient@lesoheric.fr ou par téléphone au 0764819980.</p>
       </section>
     </div>
-
     <section class="description">
       <h2>Qui nous-Sommes🤔</h2>
       <p> <strong>LESOHERIC-Transport</strong>, une division de l'entreprise LESOHERIC spécialisée dans le transport et les transferts d'argent. 
@@ -296,22 +297,17 @@ publishable-key="pk_live_51PD09hHWesTGdUBeypdT45kLmLHxc0VAH6eyUA2zCQnxLk3Ime3zvR
           <li ><a href="https://www.lesoheric.fr/">LESOHERIC-MARKET(lesoheric.fr)</a> : Site E-commerce, application disponible sur PLAYSTORE et l'APPSTORE. </li>
         </ul>
     </section>
-
-
-
-    
+   
      <footer >
      
-               <ul class="nav justify-content-center bg-dark  p-3" style="text-align : center;font-size : 11px;" >
-               <li class="nav-item" style="min-width: 180px;"><a class="nav-link "style="text-align:center"href="index.html">ACCUEIL</a></li>
-                <li class="nav-item" style="min-width: 180px;"><a class="nav-link "style="text-align:center"href="#service">SERVICES</a></li>
-                <li class="nav-item" style="min-width: 180px;"><a class="nav-link "style="text-align:center"href="#tarification">TARIFS</a></li>
-                <li class="nav-item" style="min-width: 180px;"><a class="nav-link "style="text-align:center"href="https://www.lesoheric.fr/">BOUTIQUE</a></li>
+               <ul class="nav justify-content-center bg-dark  p-3">
+               <li class="nav-item" ><a class="nav-link " href="index.html">ACCUEIL</a></li>
+                <li class="nav-item" ><a class="nav-link " href="#service">SERVICES</a></li>
+                <li class="nav-item" ><a class="nav-link " href="#tarification">TARIFS</a></li>
+                <li class="nav-item" ><a class="nav-link " href="https://www.lesoheric.fr/">BOUTIQUE</a></li>
              
               </ul>
-              
-
-              <div class="card" style=" margin : 0px; border-radius : 0px;border : 1px solid rgba(0, 0, 0, 0);"   >
+              <div class="card"  >
                 <figure class="text-center">
                   <blockquote class="blockquote">
                     <h6>COLIS</h6>
@@ -329,76 +325,7 @@ publishable-key="pk_live_51PD09hHWesTGdUBeypdT45kLmLHxc0VAH6eyUA2zCQnxLk3Ime3zvR
 
      </div>
 
-     <style>
-      .services img{
-        width: 100px;
-        height: 100px;
-        object-fit: contain;
-
-      }
-      .card{
-        margin-left : 10px;
-        margin-right : 10px;
-      }
-      .card img{
-        height: 200px;
-        width: 200px;
-      }
-      .nav-item{
-        margin-right: 5px;;
-      }
-      .services div{
-        display: inline-block;
-        margin-top: 40px;
-        
-      }
-      .services{
-        text-align: center;
-      }
-      address{
-        display: inline-block;
-        text-align: left;
-        margin-left: 100px;
-        margin-right: 100px;
-        
-        
-      }
-      #adresses{
-        margin: auto;
-        text-align: center;
-      }
-      p,.liens_utiles{
-        font-size: 13px;
-      }
-      a{
-        color : rgb(110, 26, 26);
-      }
-      
-      h1,h2,h3,h4,h5,td,th{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      }
-      td,th{
-        font-size: 13px;
-      }
-      address strong{
-        font-size: 13px;
-      }
-
-
-  
-      @media (max-width: 800px) {
-        th, td {
-          padding: 2px;
-          font-size: 0.5em; /* Réduit encore plus la taille de la police */
-        }
-        table {
-          font-size: 0.9em; /* Réduit la taille de la police de la table */
-        }
-       
-      }
-
-
-</style>
+   >
      
     </body>
 </html>
