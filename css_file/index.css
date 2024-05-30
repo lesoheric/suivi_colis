@@ -90,6 +90,10 @@
 
   
       @media (max-width: 800px) {
+        #page{
+          max-width:100%;
+           margin: auto;
+       }
         .navbar-nav{
           margin: auto;
           font-size : 8px;
